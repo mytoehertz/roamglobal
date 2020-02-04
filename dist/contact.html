@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/202e408fa7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+          <h1 class="logo">ROAM LOGO</h1>
+          <ul class="nav">
+            <li><a href="/dist/index.html">Home</a></li>
+            <li><a href="/dist/index.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a active=true href="/dist/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+<div class="container">
+    <form class="mt-1" action="POST" name="email-form" method="POST" data-netlify="true">
+        <div class="fields">
+            <div class="field half">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" />
+            </div>
+            <div class="field half">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" />
+            </div>
+            <div class="field half">
+                <label for="phone">Phone</label>
+                <input type="text" name="phone" id="phone" />
+            </div>
+
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="4"></textarea>
+            </div>
+            <!-- <div class="field">
+        <label for="message">File</label>
+        <inpuit type='file' name="myfile" id="myfile" placeholder='Upload File' rows="7" />
+    </div> -->
+            <div class="field">
+                <div data-netlify-recaptcha='true'></div>
+            </div>
+        </div>
+        <ul class="actions">
+            <li><input type="submit" value="Send Message" class="form-control submit" /></li>
+            <li><input type="reset" value="Reset" /></li>
+        </ul>
+    </form>
+</div>
+
+
+
+ <!-- Footer -->
+ <footer class="section-footer py-4 bg-primary">
+    <div class="container">
+      <div>
+        <h2 class="text-2 mb-1">Lorem ipsum dolor sit.</h2>
+        <a href="http://linkedin.com">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="http://facebook.com">
+          <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <a href="http://youtube.com">
+          <i class="fab fa-youtube fa-2x"></i>
+        </a>
+      </div>
+      <div>
+        <h3>Company Info</h3>
+        <ul>
+          <li><a href="products.html">All Products</a></li>
+          <li><a href="index.html">About Us</a></li>
+          <!-- <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li> -->
+        </ul>
+      </div>
+      <div>
+        <h3>Office Address</h3>
+        <ul>
+          <li>11211 Greenwillow Street</li>
+          <li>Houston, TX 77035</li>
+          <li>Office: (713) 664-4030</li>
+          <li>Direct: (713) 478-8441</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Placeholder for column four</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui eius esse eum quae autem obcaecati non quis molestiae aliquid. Consequuntur similique rem corrupti excepturi corporis voluptatum quibusdam tempore quo a?</p>
+
+        
+      </div>
+      
+    </div>
+  </footer>
+
+<!--Scripts -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+</body>
+</html>

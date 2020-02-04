@@ -1,6 +1,6 @@
 :root {
   --primary-color: #333;
-  --secondary-color: #444;
+  --secondary-color: rgb(92, 90, 90);
   --overlay-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -28,6 +28,7 @@ a {
   color: #444;
   text-decoration: none;
 }
+
 
 ul {
   list-style: none;
@@ -98,7 +99,7 @@ img {
 
 .section-b {
   position: relative;
-  background: url('https://i.ibb.co/1RS1dqC/section-b.jpg') no-repeat bottom center/cover;
+  background: url('/dist/img/FoodGrade.jpg') no-repeat bottom center/cover;
   height: 600px;
 }
 
@@ -155,6 +156,7 @@ img {
   background: var(--primary-color);
   color: #fff;
   padding: 4rem 0;
+  
 }
 
 .section-footer .container {
@@ -241,6 +243,7 @@ img {
   cursor: pointer;
   font-size: 1.1rem;
   border-radius: 30px;
+  font-weight: bolder;
 }
 
 .btn:hover {
@@ -254,6 +257,55 @@ img {
   top: 0;
   left: 0;
   background-color: var(--overlay-color);
+}
+
+.section-p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.overlay-p {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+.overlay-p2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.section-p {
+  position: relative;
+  background: url('/dist/img/ROAU\ 500081-3\ \(7\).JPG') no-repeat bottom center/cover;
+  height: 750px;
+}
+
+.section-p-inner {
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  max-width: 860px;
+  padding: 5rem 0;
+}
+
+.section-p-inner h3 {
+  font-size: 2rem;
+}
+
+.section-p-inner h2 {
+  font-size: 5rem;
+  margin-top: 1rem;
+}
+
+.section-p-inner p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 700px) {
