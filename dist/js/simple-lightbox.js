@@ -1,9 +1,4 @@
-/*!
-	By André Rinas, www.andrerinas.de
-	Documentation, www.simplelightbox.de
-	Available for use under the MIT License
-	1.17.3
-*/
+
 ;( function( $, window, document, undefined )
 {
 	'use strict';
