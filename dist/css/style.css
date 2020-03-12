@@ -158,7 +158,7 @@ nav a:hover {
 
 .section-b {
   position: relative;
-  background: url('/dist/img/FoodGrade.jpg') no-repeat bottom center/cover;
+  background: url('img/FoodGrade.jpg') no-repeat bottom center/cover;
   height: 650px;
 }
 
@@ -382,14 +382,14 @@ width: fit-content;
 }
 .section-p2 {
   position: relative;
-  background: url('/dist/img/FoodGrade.jpg') no-repeat bottom center/cover;
+  background: url('img/FoodGrade.jpg') no-repeat bottom center/cover;
   height: 500px;
   overflow: auto;
 }
 
 .section-p {
   position: relative;
-  background: url('/dist/img/ROAU\ 500081-3\ \(7\).JPG') no-repeat bottom center/cover;
+  background: url('img/ROAU\ 500081-3\ \(7\).JPG') no-repeat bottom center/cover;
   height: 750px;
   overflow: auto;
 }
