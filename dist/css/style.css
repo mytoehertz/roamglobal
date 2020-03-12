@@ -39,7 +39,9 @@ img {
   width: 100%;
 }
 
-
+.hidden {
+  display: none;
+}
 
 .container {
   max-width: 1100px;
@@ -240,7 +242,7 @@ nav a:hover {
   color: #555;
   margin-right: 0.5rem;
 }
-
+/* Subscribe */
 .email-form {
   width: 100%;
   display: inline-block;
@@ -250,12 +252,12 @@ nav a:hover {
   line-height: 0;
   margin-top: 1rem;
 }
-
-/* // .form-control-wrap {
-// 	position: relative;
-// 	display: inline-block;
-// 	width: 100%;
-// } */
+/* OLD FORM CSS */
+ /* .form-control-wrap {
+ 	position: relative;
+ 	display: inline-block;
+ 	width: 100%;
+ } */
 
 .email-form .form-control {
   display: inline-block;
@@ -521,21 +523,7 @@ width: fit-content;
     display: none;
   }
 
-  /* Form media query */
-
-  .mt-1 {
-    width: auto;
-  }
-  .field {
-    width: auto;
-  }
-  .fieldhalf {
-    width: auto;
-  }
-  .actions {
-    width: auto;
-  }
-}
+  
 /* Navbar media controls */
 
 @media only screen and (max-width: 700px) {

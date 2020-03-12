@@ -7,28 +7,129 @@
     <title>Contact</title>
     <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/202e408fa7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contact.css">
+  
+  <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+      <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="nav-container">
     <nav>
- 
       <img src="/dist/img/roam.png" alt="Roam Logo" class="logo">      
-  
       <div class="left-menu">
         <a  href="/dist/index.html">Home |</a>
         <!-- <a href="/dist/index.html">About |</a> -->
         <a href="products.html">Products |</a>
         <a active=true href="/dist/contact.html">Contact</a>
       </div>
-      
-      </nav>
+    </nav>
+</div>
+
+<div class="contact1">
+  <div class="container-contact1">
+    <div class="contact1-pic js-tilt" data-tilt>
+      <img src="img/img-01.png" alt="mail image">
+    </div>
+
+    <form name="contact" class="contact1-form validate-form" action="POST" method="POST" data-netlify="true" netlify-honeypot="bot-field" >
+      <span class="contact1-form-title">
+        Contact us!
+      </span>
+
+      <p class="hidden">
+        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+      </p>
+
+      <div class="wrap-input1 validate-input" data-validate = "Name is required">
+        <input class="input1" type="text" name="name" placeholder="Name">
+        <span class="shadow-input1"></span>
+      </div>
+
+      <div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+        <input class="input1" type="email" name="email" placeholder="Email">
+        <span class="shadow-input1"></span>
+      </div>
+
+      <div class="wrap-input1 validate-input" data-validate = "Valid phone is required">
+        <input class="input1" type="text" name="phone" placeholder="Phone">
+        <span class="shadow-input1"></span>
+      </div>
+
+      <div class="wrap-input1 validate-input" data-validate = "Subject is required">
+        <input class="input1" type="text" name="subject" placeholder="Subject">
+        <span class="shadow-input1"></span>
+      </div>
+
+      <div class="wrap-input1 validate-input" data-validate = "Message is required">
+        <textarea class="input1" name="message" placeholder="Message"></textarea>
+        <span class="shadow-input1"></span>
+      </div>
+
+      <!-- <div data-netlify-recaptcha='true'></div> -->
+
+      <div class="container-contact1-form-btn">
+        <button class="contact1-form-btn submit" type="submit"  >
+          <span>
+            Send Email
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+    </form>
+  </div>
 </div>
 
 
 
-<div class="container">
+
+<!--===============================================================================================-->
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/bootstrap/js/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/tilt/tilt.jquery.min.js"></script>
+<script >
+  $('.js-tilt').tilt({
+    scale: 1.1
+  })
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-23581568-13');
+</script>
+
+<!--===============================================================================================-->
+<script src="js/main.js"></script>
+
+
+
+
+
+
+<!-- OLD FORM -->
+<!-- <div class="container">
     <form class="mt-1" action="POST" name="email-form" method="POST" data-netlify="true">
         <div class="fields">
             <div class="fieldhalf">
@@ -48,10 +149,10 @@
                 <label for="message">Message</label>
                 <textarea name="message" id="message" rows="4"></textarea>
             </div>
-            <!-- <div class="field">
+            <div class="field">
         <label for="message">File</label>
         <inpuit type='file' name="myfile" id="myfile" placeholder='Upload File' rows="7" />
-    </div> -->
+    </div>
             <div class="field">
                 <div data-netlify-recaptcha='true'></div>
             </div>
@@ -61,7 +162,7 @@
             <li><input type="reset" value="Reset" /></li>
         </ul>
     </form>
-</div>
+</div> -->
 
 
 
