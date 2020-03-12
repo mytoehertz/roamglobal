@@ -3,159 +3,156 @@
 <head>
   <meta charset="UTF-8">
   <title>ISO Tanks</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+
   <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/202e408fa7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  
   <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/index.css"> -->
 </head>
 <body id="home">
 <!-- partial:index.partial.html -->
-<nav class="navbar">
-      <div class="container">
-        <h1 class="logo">ROAM</h1>
-        <ul class="nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html">About</a></li>
-          <li><a active=true  href="products.html">Products</a></li>
-		    <li><a href="/dist/contact.html">Contact</a></li>
-        </ul>
-      </div>
+<div class="nav-container">
+  <nav>
+ 
+    <img src="/dist/img/roam.png" alt="Roam Logo" class="logo">      
+
+    <div class="left-menu">
+      <a active=true href="/dist/index.html">Home |</a>
+      <!-- <a href="/dist/index.html">About |</a> -->
+      <a active=true href="products.html">Products |</a>
+      <a href="/dist/contact.html">Contact</a>
+    </div>
+    
     </nav>
+</div>
 
   
 
     <!-- Large Text / Overlay Text -->
     <section id="main" class="section-p">
-      <div class="overlay">
-        <div class="section-p-inner py-5">
+      <div class="overlay-about">
+        <div class="section-p-inner py-5" style="text-align: center;">
          
-          <h2 class="text-5 mt-1">Custom Solutions</h2>
+          <h2 class="text-5 mt-1">Custom Solutions</h2> <br><br>
           <h2 class="text-5"></h2>
           <div class="overlay-p">
-            <div class="container">
-             <ul>
-                <li><a href="#foodGrade">Food Grade</a></li>
-                <li><a href="#chemical">Chemical & Petroleum</a></li>
-                <!-- <li><a href="#petroleum">Petroleum</a></li> -->
-                <li><a href="#special">Speciality Tanks</a></li>
-              </ul>
+            <div class="tab">
+                <div class="btn2 tablinks" onclick="openInfo(event, 'foodGrade')"><a href="#foodGrade">Food Grade</a></div><br>
+                <div class="btn2 tablinks" onclick="openInfo(event, 'chemical')"><a href="#chemical">Chemical & Petroleum</a></div><br>
+                <div class="btn2 tablinks" onclick="openInfo(event, 'special')"><a href="#special">Speciality Tanks</a></div><br>
+                <div class="btn2 tablinks" onclick="openInfo(event, 'aseptic')"><a href="#aseptic">Aseptic Tanks</a></div><br>
+                <div class="btn2 tablinks" onclick="openInfo(event, 'vertical')"><a href="#vertical">Vertical Tanks</a></div><br>
+                <div class="btn2 tablinks" onclick="openInfo(event, 'chassis')"><a href="#chassis">Chassis</a></div><br>
+              
             </div>
-            <div class="container">
-              <ul>
-                    <li><a href="#aseptic">Aseptic Tanks</a></li>
-                    <li><a href="#vertical">Vertical Tanks</a></li>
-                    <li><a href="#chassis">Chassis</a></li>
-                  </ul>
-            </div>
-
           </div>
           
           
         </div>
       </div>
     </section>
+  
+
 <!-- Food Grade -->
-<div class="container"></div>
-    <section id="foodGrade" class="section-p">
+<div class="">
+    <section id="foodGrade" class="section-p tabcontent">
         <div class="overlay">
           <div class="section-p-inner py-5">
-            <h2 class="text-5 mt-1">Food Grade</h2>
-            
-            <p>ISO tanks provide a great platform for transport and sanitation for the food & beverage industry. Surfaces and valves are detergent washed, cleaned, buffed, and passivated to achieve a clean, dry interior free of prior cargo odor, residue, and any transferable stains. </p>
-            <p>Passivation is 100% and all gaskets and seals are replaced with PTFE (Teflon).</p>
-            <p>ROAM Tank Innovations is a leader in the Honey industry!  We provide several types of tanks and customized options for all heating, cooling and blending of materials.</p>
-            <p>These tanks have become more and more popular with bee farmers and honey packers due to our innovative blending methods and mixing systems. Built for transport, ISO tanks have a very long life span and have never leaked in storage applications.</p>
+            <h2 class="text-5 mt-1">Food Grade</h2> <br>
+            <p>Many of our projects require food grade ISO tanks for transport, sanitation and production in the food and beverage industry. We provide several types of tanks and customized options for all heating, cooling and blending of materials in a variety of sizes.</p><br>
+            <p>Each food grade tank’s stainless steel surfaces and valves are detergent washed, cleaned, buffed, and passivated to achieve a clean, dry interior free of prior cargo odor, residue, and any transferable stains. Passivation is 100% and all gaskets and seals are replaced with PTFE (Teflon). Built for transport, ISO tanks have a very long life span and have never leaked in storage. 
+            </p><br>
+            <p>We can provide client references across the honey and other food industries who are beyond satisfied with food grade tanks for blending and mixing systems.
+            </p><br>
+            <div class="btn2" id="contact"><a href="/dist/contact.html">Contact us</a></div>
           </div>
         </div>
       </section>
 <!-- Chemical and Petro -->
-<div class="container"></div>
-<section id="chemical" class="section-p">
+<section id="chemical" class="section-p tabcontent">
     <div class="overlay">
       <div class="section-p-inner py-5">
-        <h2 class="text-5 mt-1">Chemical & Petroleum</h2>
-        <p>Stainless Steel VS Carbon Steel and Plastic</p>
-        <div class="overlay-p"></div>
-        <ul>
-            <li>Corrosion Resistance: Resist water treatment, chemicals, and can easily tolerate abrasive wash-down solvents. They will never rust!</li>
-            <li>Temperature Tolerance: Not impacted by excessive temperatures or UV exposure. They maintain their shape and are easy to fill/empty in all weather environments.</li>
-            <li>Value: Easily fabricated, maintenance free, and maintain their integrity over the long haul. They are an asset, NOT an expense.</li>
-            <li>Recyclable: The eco-friendly tank choice. Stainless materials can be reclaimed to help reduce environmental impact, plastics cannot. Unlike carbon steel they will not react with the contents and contaminate the metal.​</li>
-            <li>Fire Safety: Resist flames for over seven (7) minutes! Under the same testing conditions poly-composite tanks are compromised in just ninety (90) seconds!</li>
-            <li>Ready to use upon arrival: Our ISO tanks come with a three (3) inch bottom discharge valve that can be locked, twenty (20) inch manway, pressure safety relief valves, air purge/vent valves, heat channels, and two (2) inches of insulation.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-<!-- Petrolium -->
-  <!-- <section id="petroleum" class="section-p">
-    <div class="overlay">
-      <div class="section-p-inner py-5">
-        <h2 class="text-5 mt-1">Petroleum</h2>
-        <p>ROAM Tank Innovation’s ability to house certain types of petroleum products allows its clients to handle AvGas and Jet Fuel in a cost effective way with an easy to use method for loading and unloading of their materials.</p>
-        <p>The Aviation Fuel Tank is the market leader for Jet and AvGas, it offers a moisture barrier, sanitized barrel, and sampling and drainage valves at the lowest point of the tank.</p>
-        </div>
-    </div>
-  </section> -->
-<!-- Specialty Tank -->
-  <section id="special" class="section-p">
-    <div class="overlay">
-      <div class="section-p-inner py-5">
-        <h3 class="text-2">ROAU 78's</h3>
-        <h2 class="text-5 mt-1">Specialty Tanks</h2>
-        <p>We offer you a more cost effective way to process for smaller in-house operations. Perfect for maple syrup farmers, honey farmers, distillers and much more!</p>
-        <ul>
-            <li>Maximum door clearance being 96 inches by 96 inches required the tank to enter the room horizontal and then be tiltable.</li>
-            <li>Required both horizontal and vertical fork pockets at the perfect midpoint to be tiltable.</li>
-            <li>Maximum height in refrigerated room was 12 feet. The tank was sized for 11 foot 6 inch allowance for a 3 inch bottom discharge.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-<!-- Aseptic -->
-  <section id="aseptic" class="section-p">
-    <div class="overlay">
-      <div class="section-p-inner py-5">
-        <h2 class="text-5 mt-1">Aseptic</h2>
-        <p>Aseptic tanks utilize vacuum loading and discharge for the transportation of bulk foods.</p>
-        <p>Examples of products transported in aseptic tanks are:</p>
-        <ul>
-            <li>Concentrated Fruit Juice</li>
-            <li>Food & Beverage Colorants</li>
-            <li>Dairy Products</li>
-            <li>Alcoholic Beverages</li>
-            <li>Sweeteners</li>
-            <li>Variety of Edible Oils</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <!-- Vertical Tanks -->
-  <section id="vertical" class="section-p">
-    <div class="overlay">
-      <div class="section-p-inner py-5">
-        <h3 class="text-2">Super Custom</h3>
-        <h2 class="text-5 mt-1">Vertical Tanks</h2>
-        <p>ROAM Tank Innovations also offers vertical tank conversions to maximize your floor space. The process takes between 4-6 weeks for a standard size tank.</p>
-        <p>However if you have height constraints we can create a super custom tank to meet your needs.</p>
-        <p>Mixers, reactors, separators are all common use cases for vertical tanks.</p>
-      </div>
-    </div>
-  </section>
-<!-- Chasis -->
-  <section id="chassis" class="section-p">
-    <div class="overlay">
-      <div class="section-p-inner py-5">
-        <h3 class="text-2">Tank Haulers</h3>
-        <h2 class="text-5 mt-1">Chassis</h2>
-        <p>Need a chassis to pick up your tank, or just for your day to day transportation? We have plenty of affordable used and refurbished chassis to choose based on your needs!</p>
+        <h2 class="text-5 mt-1">Chemical & Petroleum</h2> <br>
+            <p>Stainless steel ISO tanks are ideal for chemical, petroleum, and petrochemical storage and transport and are ready to use upon arrival. Unlike carbon steel, ISO tanks will not react with the contents and contaminate the metal.​ ISO tanks resist water treatment, chemicals, and can easily tolerate abrasive wash-down solvents and are not impacted by excessive temperatures or UV exposure. They maintain their shape and integrity over years of use, do not rust, and are easy to fill/empty in all weather environments. They resist flames for over seven (7) minutes! Under the same testing conditions poly-composite tanks are compromised in just ninety (90) seconds. 
+            </p><br>
+           <p>Another advantage of stainless steel tanks is that they can be reclaimed to help reduce the environmental impact of your operations while plastics cannot. Each of our tanks come with:</p>
+            <br>
+              <li>locking three (3) inch bottom discharge valve</li>
+              <li>twenty (20) inch manway</li>
+              <li>pressure safety relief valves</li>
+              <li>air purge/vent valves</li>
+              <li>heat channels</li>
+              <li>two (2) inches of insulation</li>
+            <div class="btn2" id="contact" ><a href="/dist/contact.html">Contact us</a></div>
+
       </div>
     </div>
   </section>
 
+<!-- Specialty Tank -->
+  <section id="special" class="section-p tabcontent">
+    <div class="overlay">
+      <div class="section-p-inner py-5">
+        <h2 class="text-5 mt-1">Specialty Tanks</h2> <br>
+        <p>When you need an out-of-the-box solution, ROAM has 26 years of hands-on engineering experience to meet your needs. We can customize ISO tank size, orientation, and functional abilities like additional heating channels, clean in place systems, sight glasses and more. For smaller operations, we offer you a more cost effective way to scale your manufacturing by refurbishing tanks to your specifications. 
+        </p><br>
+        <p>We are also able to source prefabricated OEM specialty tanks, such as helium tanks, cryogenic tanks, refrigerated tanks, and swap-body tanks and deliver them turnkey to your location. Ready to use upon arrival, ISO tanks are versatile, durable and easy to maintain once installed.</p>
+       <br>    <div class="btn2" id="contact"><a href="/dist/contact.html">Contact us</a></div>
+      </div>
+    </div>
+  </section>
+<!-- Aseptic -->
+  <section id="aseptic" class="section-p tabcontent">
+    <div class="overlay">
+      <div class="section-p-inner py-5">
+        <h2 class="text-5 mt-1">Aseptic</h2> <br>
+        <p>Aseptic tanks utilize vacuum loading and discharge for the controlled transportation of bulk foods and beverages. Aseptic tanks may be right for you if your product is similar to these popular examples:
+        </p>
+<br>        <li>Concentrated Fruit Juice</li>
+            <li>Food & Beverage Colorants</li>
+            <li>Dairy Products</li>
+            <li>Alcoholic Beverages</li>
+            <li>Sweeteners</li>
+            <li>Edible Oils</li><br>
+            <div class="btn2" id="contact"><a href="/dist/contact.html">Contact us</a></div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Vertical Tanks -->
+  <section id="vertical" class="section-p tabcontent">
+    <div class="overlay">
+      <div class="section-p-inner py-5">
+        <h2 class="text-5 mt-1">Vertical Tanks</h2> <br>
+       <p>Need to maximize your floor space or take advantage of gravity to add pressure to discharge your product? We specialize in converting a normally horizontal tank to vertical, particularly for food and beverage production and storage but also for chemical needs.  The process takes between 4-6 weeks for a standard size tank, but we can create a smaller custom tank if your facility has height constraints. Some common use cases for vertical tanks include: 
+      </p>
+      <br>
+        <li>Reactors</li>
+        <li>Separators</li>
+        <li>Mixers</li>
+        <li>Brewers</li> <br>
+        <div class="btn2" id="contact"><a href="/dist/contact.html">Contact us</a></div>
+
+      </div>
+    </div>
+  </section>
+<!-- Chasis -->
+  <section id="chassis" class="section-p tabcontent">
+    <div class="overlay">
+      <div class="section-p-inner py-5">
+        <h2 class="text-5 mt-1">Chassis</h2> <br>
+      <p>Need a chassis to pick up your tank, or just for your day-to-day transportation?</p> <br> <p>We have a large selection of affordable used and refurbished chassis to choose based on your needs, including double and tri-axles.  Chassis are the safe and legal way to haul your tank empty or loaded.</p>
+       <br> <div class="btn2" id="contact"><a href="/dist/contact.html">Contact us</a></div></div>
+    </div>
+  </section>
+</div>
     <!-- Footer -->
     <footer class="section-footer py-4 bg-primary">
       <div class="container">
-        <div>
+        <!-- <div>
           <h2 class="text-2 mb-1">Follow us on social!</h2>
           <a href="http://linkedin.com">
             <i class="fab fa-linkedin fa-2x"></i>
@@ -166,7 +163,7 @@
           <a href="http://youtube.com">
             <i class="fab fa-youtube fa-2x"></i>
           </a>
-        </div>
+        </div> -->
         <div>
           <h3>Company Info</h3>
           <ul>
@@ -186,21 +183,36 @@
           </ul>
         </div>
         <div>
-          <h3>Fourth Column Placeholder</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui eius esse eum quae autem obcaecati non quis molestiae aliquid. Consequuntur similique rem corrupti excepturi corporis voluptatum quibusdam tempore quo a?</p>
-          
+          <h3>Subscribe</h3>
+          <p>
+            Sign up for our bi-monthly newsletter.
+          </p>
+          <form
+            class="mt-1"
+            name="email-form"
+            method="POST"
+            data-netlify="true"
+          >
+            <div class="email-form">
+              <span class="form-control-wrap"
+                ><input
+                  type="email"
+                  name="email"
+                  id="email"
+                  size="40"
+                  class="form-control"
+                  placeholder="E-mail"/></span
+              ><button type="submit" value="Submit" class="form-control submit">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
 <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-  <script src="./js/simple-lightbox.js"></script>
-  <script>
-    $(function() {
-      const gallery = $('.gallery a').simpleLightbox();
-    })
-  </script>
-<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/1.17.2/simple-lightbox.min.js'></script><script  src="./script.js"></script> -->
-
+<script src="/dist/js/script.js"></script>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 </body>
 </html>

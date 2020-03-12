@@ -11,32 +11,35 @@
     <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-          <h1 class="logo">ROAM LOGO</h1>
-          <ul class="nav">
-            <li><a href="/dist/index.html">Home</a></li>
-            <li><a href="/dist/index.html">About</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a active=true href="/dist/contact.html">Contact</a></li>
-          </ul>
-        </div>
+  <div class="nav-container">
+    <nav>
+ 
+      <img src="/dist/img/roam.png" alt="Roam Logo" class="logo">      
+  
+      <div class="left-menu">
+        <a  href="/dist/index.html">Home |</a>
+        <!-- <a href="/dist/index.html">About |</a> -->
+        <a href="products.html">Products |</a>
+        <a active=true href="/dist/contact.html">Contact</a>
+      </div>
+      
       </nav>
+</div>
 
 
 
 <div class="container">
     <form class="mt-1" action="POST" name="email-form" method="POST" data-netlify="true">
         <div class="fields">
-            <div class="field half">
+            <div class="fieldhalf">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" />
             </div>
-            <div class="field half">
+            <div class="fieldhalf">
                 <label for="email">Email</label>
                 <input type="text" name="email" id="email" />
             </div>
-            <div class="field half">
+            <div class="fieldhalf">
                 <label for="phone">Phone</label>
                 <input type="text" name="phone" id="phone" />
             </div>
@@ -65,7 +68,7 @@
  <!-- Footer -->
  <footer class="section-footer py-4 bg-primary">
     <div class="container">
-      <div>
+      <!-- <div>
         <h2 class="text-2 mb-1">Lorem ipsum dolor sit.</h2>
         <a href="http://linkedin.com">
           <i class="fab fa-linkedin fa-2x"></i>
@@ -76,7 +79,7 @@
         <a href="http://youtube.com">
           <i class="fab fa-youtube fa-2x"></i>
         </a>
-      </div>
+      </div> -->
       <div>
         <h3>Company Info</h3>
         <ul>
@@ -96,12 +99,12 @@
         </ul>
       </div>
       <div>
-        <h3>Placeholder for column four</h3>
+        <!-- <h3>Placeholder for column four</h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui eius esse eum quae autem obcaecati non quis molestiae aliquid. Consequuntur similique rem corrupti excepturi corporis voluptatum quibusdam tempore quo a?</p>
 
-        
+         -->
       </div>
-      
+    
     </div>
   </footer>
 
