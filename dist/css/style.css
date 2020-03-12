@@ -26,7 +26,7 @@ h4 {
 }
 
 a {
-  color: #444;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -376,18 +376,21 @@ width: fit-content;
 /* Products overlay */
 .overlay-p {
   display: grid;
-  
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
+  align-content: center;
 }
-
-
-
+.section-p2 {
+  position: relative;
+  background: url('/dist/img/FoodGrade.jpg') no-repeat bottom center/cover;
+  height: 500px;
+  overflow: auto;
+}
 
 .section-p {
   position: relative;
   background: url('/dist/img/ROAU\ 500081-3\ \(7\).JPG') no-repeat bottom center/cover;
-  height: 700px;
+  height: 750px;
   overflow: auto;
 }
 
@@ -413,8 +416,6 @@ width: fit-content;
   margin-top: 1rem;
   text-align: center;
 }
-
-
 
 .section-p p li {
   margin-top: 1rem;
