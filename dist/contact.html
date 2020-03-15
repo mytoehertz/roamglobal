@@ -28,7 +28,9 @@
 <body>
   <div class="nav-container">
     <nav>
-      <img src="img/roam.png" alt="Roam Logo" class="logo">      
+      <a href="index.html" >
+       <img src="img/roam.png" alt="Roam Logo" class="logo">      
+      </a>
       <div class="left-menu">
         <a  href="index.html">Home |</a>
         <!-- <a href="/dist/index.html">About |</a> -->
@@ -42,11 +44,13 @@
   <div class="container-contact1">
     <div class="contact1-pic js-tilt" data-tilt>
       <img src="img/img-01.png" alt="mail image">
+      
     </div>
 
     <form name="contact" class="contact1-form validate-form" action="POST" method="POST" data-netlify="true" netlify-honeypot="bot-field" >
       <span class="contact1-form-title">
-        Contact us!
+        Contact us!    <br> <br> <span >We'll respond within 24 hours.</span>
+
       </span>
 
       <p class="hidden">
@@ -82,7 +86,7 @@
 
       <div class="container-contact1-form-btn">
         <button class="contact1-form-btn submit" type="submit"  >
-          <span>
+          <span id="submit-btn">
             Send Email
             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
           </span>
@@ -186,8 +190,8 @@ gtag('config', 'UA-23581568-13');
         <ul>
           <li><a href="products.html">All Products</a></li>
           <li><a href="index.html">About Us</a></li>
-          <!-- <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li> -->
+          <li><a href="contact.html">Contact Us</a></li>
+          <!-- <li><a href="#">Terms of Service</a></li> -->
         </ul>
       </div>
       <div>
@@ -196,14 +200,36 @@ gtag('config', 'UA-23581568-13');
           <li>11211 Greenwillow Street</li>
           <li>Houston, TX 77035</li>
           <li>Office: (713) 664-4030</li>
-          <li>Direct: (713) 478-8441</li>
+          <li>Direct: (713) 503-9172</li>
         </ul>
       </div>
       <div>
-        <!-- <h3>Placeholder for column four</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui eius esse eum quae autem obcaecati non quis molestiae aliquid. Consequuntur similique rem corrupti excepturi corporis voluptatum quibusdam tempore quo a?</p>
-
-         -->
+        <div>
+          <h3>Newsletter</h3>
+          <p>
+            Sign up for offers and updates.
+          </p>
+          <form
+            class="mt-1"
+            name="email-form"
+            method="POST"
+            data-netlify="true"
+          >
+            <div class="email-form">
+              <span class="form-control-wrap"
+                ><input
+                  type="email"
+                  name="email"
+                  id="email"
+                  size="40"
+                  class="form-control"
+                  placeholder="E-mail"/></span
+              ><button type="submit" value="Submit" class="form-control submit">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     
     </div>

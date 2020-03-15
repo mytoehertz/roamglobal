@@ -1,4 +1,8 @@
-
+:root {
+  --primary-color: rgb(28, 116, 247);
+  --secondary-color:rgba(255, 0, 0, 0.712);
+  --overlay-color: rgba(0, 0, 0, 0.7);
+}
 
 
 /*//////////////////////////////////////////////////////////////////
@@ -30,10 +34,7 @@ a:focus {
 	outline: none !important;
 }
 
-a:hover {
-	text-decoration: none;
-	color: rgb(28, 116, 247);
-}
+
 
 /*---------------------------------------------*/
 h1,h2,h3,h4,h5,h6 {
@@ -44,8 +45,29 @@ p {
 	
 	font-size: 14px;
 	line-height: 1.7;
-	color: #666666;
+	color: #fff;
 	margin: 0px;
+}
+
+
+#submit-btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border:0.16em solid rgba(255,255,255,0);
+  border-radius:2em;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  font-weight: bolder;
+  width: 20rem;
+}
+
+#submit-btn:hover {
+  background: var(--secondary-color);
+  border-color: rgba(black);
+
 }
 
 ul, li {
@@ -105,7 +127,7 @@ iframe {
   min-height: 100%;
   padding: 15px;
 
-  background: rgb(28, 116, 247);
+  background: rgb(--primary-color);
   /* background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
   background: -o-linear-gradient(left, #0072ff, #00c6ff);
   background: -moz-linear-gradient(left, #0072ff, #00c6ff);
@@ -136,7 +158,7 @@ iframe {
   justify-content: space-between;
   align-items: center;
 
-  padding: 90px 130px 88px 148px;
+  padding: 0px 130px 88px 148px;
 }
 
 /*------------------------------------------------------------------
@@ -159,7 +181,7 @@ iframe {
 .contact1-form-title {
   display: block;
   font-size: 24px;
-  color: #333333;
+  color: black;
   line-height: 1.2;
   text-align: center;
   padding-bottom: 44px;
@@ -210,7 +232,7 @@ textarea.input1 + .shadow-input1 {
   width: 100%;
   height: 100%;
   box-shadow: 0px 0px 0px 0px;
-  color: rgb(28, 116, 247);
+  color: rgb(--primary-color);
 }
 
 .input1:focus + .shadow-input1 {
@@ -247,7 +269,7 @@ textarea.input1 + .shadow-input1 {
   min-width: 193px;
   height: 50px;
   border-radius: 25px;
-  background: rgb(28, 116, 247);
+  background: rgb(--primary-color);
   font-size: 15px;
   line-height: 1.5;
   color: #fff;
@@ -276,7 +298,7 @@ textarea.input1 + .shadow-input1 {
 }
 
 .contact1-form-btn:hover {
-  background: rgba(255, 0, 0, 0.712);
+  background: rgba(--secondary-color);
 }
 
 .contact1-form-btn:hover i {

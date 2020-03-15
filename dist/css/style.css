@@ -29,7 +29,10 @@ a {
   color: #fff;
   text-decoration: none;
 }
-
+a:hover {
+	text-decoration: none;
+	color: rgb(rgba(0, 0, 255, 0.699));
+}
 
 ul {
   list-style: none;
@@ -59,7 +62,7 @@ nav {
   max-width: 1720px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 nav a {
@@ -72,19 +75,20 @@ nav a {
   transition: .3s all ease-in-out;
 }
 nav a:hover {
-  opacity: .7;
+  color: rgb(rgba(0, 0, 255, 0.699));
+
 }
 
 
 .left-menu {
-  grid-column: 2;
+  grid-column: 3;
   align-self: center;
 }
    
 .left-menu a {
   padding: 1px;
   margin-right: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font: bolder;
   letter-spacing: 0.5px;
 }
@@ -235,18 +239,18 @@ nav a:hover {
 
 .section-footer a {
   line-height: 1.9;
-  color: #ccc;
+  color: #fff;
 }
 
 .section-footer a > i {
-  color: #555;
+  color: #fff;
   margin-right: 0.5rem;
 }
 /* Subscribe */
 .email-form {
   width: 100%;
   display: inline-block;
-  background-color: #555;
+  background-color: #fff;
   position: relative;
   border-radius: 20px;
   line-height: 0;
@@ -264,7 +268,7 @@ nav a:hover {
   border: 0;
   outline: 0;
   font-size: 1rem;
-  color: #ddd;
+  color: #555;
   background-color: transparent;
   font-family: inherit;
   margin: 0;
@@ -309,6 +313,8 @@ nav a:hover {
 
 .btn:hover {
   background: var(--secondary-color);
+  border-color: rgba(255,255,255,1);
+
 }
 /* products button - the ones in the carousel and first page */
 .btn2 {
@@ -534,6 +540,7 @@ width: fit-content;
   .left-menu {
     display: inline-block;
     width: 100%;
+    grid-column: 2;
   }
   .left-menu a {
     margin-right: 0;
